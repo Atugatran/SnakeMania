@@ -91,11 +91,19 @@ grid-area: left;
 
 
 .head{
+/*   background-image: url("head.png");
+  background-size: 100% 100%;
+  width: 5vmin;
+  height: 5vmin;
+  transform: rotate(90deg); */
+  
     background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
     border: 2px solid rgb(34, 4, 34); 
     transform: scale(1.02);
     border-radius: 9px;
 }
+
+
 
 .snake{
     background-color: purple;
@@ -104,7 +112,11 @@ grid-area: left;
 }
 
 .food{
-    background: linear-gradient(red, purple);
-    border: .25vmin solid black;
+  background-image: url('fruit.png');  
+  background-size: 100% 100%;
+    width: 5vmin;
+    height: 5vmin; 
+/*     background: linear-gradient(red, purple); */
+/*     border: .25vmin 1solid black; */
     border-radius: 8px;
 }
