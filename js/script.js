@@ -3,10 +3,10 @@ let inputDir = {
   x: 0,
   y: 0,
 };
-const foodSound = new Audio("food.mp3");
-const gameOverSound = new Audio("gameover.mp3");
-const moveSound = new Audio("move.mp3");
-const musicSound = new Audio("music.mp3");
+const foodSound = new Audio("../Music/food.mp3");
+const gameOverSound = new Audio("../Music/gameover.mp3");
+const moveSound = new Audio("../Music/move.mp3");
+const musicSound = new Audio("../Music/music.mp3");
 
 let speed = 10;
 let score = 0;
@@ -76,7 +76,7 @@ function gameEngine() {
     musicSound.play();
     score = 0;
     scoreBox.innerHTML = "Score: " + score;
-    let a = setTimeout(function () {
+    let a = setTimeout(function() {
       gameOver.innerHTML = ``;
     }, 4000);
   }

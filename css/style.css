@@ -4,12 +4,9 @@
   margin: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
 .body {
-  background: url("bg.jpg");
+    overflow: hidden;
+  background: url("../image/bg.jpg");
   min-height: 100vh;
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
@@ -61,7 +58,7 @@ body {
 }
 
 .food {
-  background-image: url("fruit.png");
+  background-image: url("../image/fruit.png");
   background-size: 100% 100%;
   width: 5vmin;
   height: 5vmin;
@@ -137,7 +134,21 @@ body {
     left: -80px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 981px){
+    #control {
+    display: grid;
+    margin-left: 75px;
+  }
 
+    .btn {
+    width: 140px;
+    height: 140px;
+  }
+  #left {
+    left: -140px;
+  }
+}
+)
 /* Tablet */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   #board {
@@ -149,7 +160,6 @@ body {
   #control {
     display: grid;
     margin-left: 100px;
-    /* margin-bottom: s; */
   }
 
   .btn {
@@ -162,10 +172,11 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) {
+@media screen and (max-width: 1025px) {
   #board {
     width: 90vmin;
     height: 75vmin;
-    margin-top: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
