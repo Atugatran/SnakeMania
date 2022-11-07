@@ -4,8 +4,11 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 .body {
-    overflow: hidden;
   background: url("../image/bg.jpg");
   min-height: 100vh;
   background-size: 100vw 100vh;
@@ -20,17 +23,17 @@
 #scoreBox {
   position: absolute;
   top: 9px;
-  right: 100px;
-  font-size: 39px;
+  right: 50px;
+  font-size: x-large;
   font-weight: bold;
   font-family: "New Tegomin", serif;
 }
 
 #hiscoreBox {
   position: absolute;
-  top: 59px;
-  right: 100px;
-  font-size: 39px;
+  top: 7vh;
+  right: 50px;
+  font-size: x-large;
   font-weight: bold;
   font-family: "New Tegomin", serif;
 }
@@ -97,10 +100,50 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 28px;
+  font-size: x-large;
   font-family: "New Tegomin", serif;
 }
 
+@media screen and (min-height: 0px) and (max-height: 650px){
+  #control {
+  display: none;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-height: 650px) {
+  #board {
+    width: 90vmin;
+    height: 75vmin;
+    margin-top: 60px;
+  }
+  /* Controls */
+  #control {
+    display: grid;
+    margin-left: 100px
+  }
+  
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
+
+  #left {
+    left: -100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  #board {
+    width: 90vmin;
+    height: 75vmin;
+    margin-top: 60px;
+  }
+  #scoreBox{
+    
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 480px) {
   #gameOver {
     top: 10px;
@@ -132,51 +175,5 @@
 
   #left {
     left: -80px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 981px){
-    #control {
-    display: grid;
-    margin-left: 75px;
-  }
-
-    .btn {
-    width: 140px;
-    height: 140px;
-  }
-  #left {
-    left: -140px;
-  }
-}
-)
-/* Tablet */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  #board {
-    width: 90vmin;
-    height: 75vmin;
-    margin-top: 60px;
-  }
-  /* Controls */
-  #control {
-    display: grid;
-    margin-left: 100px;
-  }
-
-  .btn {
-    width: 100px;
-    height: 100px;
-  }
-
-  #left {
-    left: -100px;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  #board {
-    width: 90vmin;
-    height: 75vmin;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }

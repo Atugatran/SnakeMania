@@ -74,6 +74,7 @@ function gameEngine() {
       },
     ];
     musicSound.play();
+    musicSound.play();
     score = 0;
     scoreBox.innerHTML = "Score: " + score;
     let a = setTimeout(function() {
@@ -128,7 +129,6 @@ function gameEngine() {
 }
 
 // Main logic starts here
-musicSound.play();
 let hiscore = localStorage.getItem("hiscore");
 if (hiscore === null) {
   hiscoreval = 0;
@@ -145,6 +145,7 @@ window.addEventListener("keydown", (e) => {
   //   y: 1,
   // }; // Start the game
   moveSound.play();
+  musicSound.play();
   switch (e.key) {
     case "ArrowUp": //  console.log("ArrowUp");
       inputDir.x = 0;
